@@ -1,0 +1,55 @@
+%TextReset {
+  text-align: right;
+  margin: 12px 0;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 80px;
+  margin: 3px;
+  padding: 5px;
+
+  &:hover {
+    background-color: #191d25;
+  }
+}
+
+.textContainer {
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.name {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tag {
+  margin-left: 8px;
+  color: gray;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.balance {
+  @extend %TextReset;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 14px;
+  @extend %TextReset;
+}

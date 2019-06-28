@@ -1,0 +1,25 @@
+%TextReset {
+  text-align: right;
+  margin: 0;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.balance {
+  @extend %TextReset;
+  font-size: 24px;
+}
+
+.balanceInfo {
+  @extend %TextReset;
+  color: gray;
+}
