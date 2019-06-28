@@ -1,6 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+// Redux
+import { Provider } from 'react-redux';
+import store from './store';
+
 import App from './App';
 
-render(<App />, document.getElementById('root'));
+const WRAPPER = document.getElementById('root');
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  WRAPPER
+);
