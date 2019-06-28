@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-
-const PORT = process.env.PORT || 8000;
+const server = require('http').Server(app);
+const PORT = process.env.PORT || 3231;
 
 app.use(express.static(__dirname + '/../../build'));
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log('Conneted to port:' + PORT);
 });
